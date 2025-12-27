@@ -23,11 +23,23 @@ export const Modal: React.FC<ModalProps> = ({
 }) => {
   const modalRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const previousFocusRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     if (isOpen) {
-      // Focus the close button when modal opens
-      closeButtonRef.current?.focus();
+      // Store the currently focused element
+      previousFocusRef.current = document.activeElement as HTMLElement;
+
+      // Focus the first focusable element in the modal
+      setTimeout(() => {
+        if (modalRef.current) {
+          const focusableElements = modalRef.current.querySelectorAll(
+            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+          );
+          const firstElement = focusableElements[0] as HTMLElement;
+          firstElement?.focus();
+        }
+      }, 0);
 
       // Handle escape key
       const handleEscape = (e: KeyboardEvent) => {
@@ -43,6 +55,8 @@ export const Modal: React.FC<ModalProps> = ({
       return () => {
         document.removeEventListener('keydown', handleEscape);
         document.body.style.overflow = 'unset';
+        // Restore focus to the previously focused element
+        previousFocusRef.current?.focus();
       };
     }
   }, [isOpen, onClose]);
@@ -50,20 +64,22 @@ export const Modal: React.FC<ModalProps> = ({
   useEffect(() => {
     if (isOpen && modalRef.current) {
       // Focus trap implementation
-      const focusableElements = modalRef.current.querySelectorAll(
-        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-      );
-      const firstElement = focusableElements[0] as HTMLElement;
-      const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
-
       const handleTab = (e: KeyboardEvent) => {
-        if (e.key === 'Tab') {
+        if (e.key === 'Tab' && modalRef.current) {
+          const focusableElements = modalRef.current.querySelectorAll(
+            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+          );
+          const firstElement = focusableElements[0] as HTMLElement;
+          const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+
           if (e.shiftKey) {
+            // Shift + Tab
             if (document.activeElement === firstElement) {
               e.preventDefault();
               lastElement?.focus();
             }
           } else {
+            // Tab
             if (document.activeElement === lastElement) {
               e.preventDefault();
               firstElement?.focus();
@@ -91,6 +107,7 @@ export const Modal: React.FC<ModalProps> = ({
         className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
         onClick={onClose}
         aria-hidden="true"
+        data-testid="modal-overlay"
       />
 
       {/* Modal content */}

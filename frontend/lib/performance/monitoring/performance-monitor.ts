@@ -266,6 +266,6 @@ export function withPerformanceMonitoring<P extends object>(
       }
     }, [])
 
-    return <Component {...props} />
+    return React.createElement(Component, props)
   }
 }
