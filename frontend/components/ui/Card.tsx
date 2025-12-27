@@ -21,7 +21,7 @@ export const Card: React.FC<CardProps> = ({
   ariaLabel,
   role,
 }) => {
-  const baseClasses = 'rounded-2xl shadow-md bg-white p-6';
+  const baseClasses = 'rounded-2xl shadow-lg bg-white p-6';
   const interactiveClasses = onClick 
     ? 'cursor-pointer hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2' 
     : '';

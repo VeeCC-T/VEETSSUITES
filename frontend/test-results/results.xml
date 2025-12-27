@@ -1,0 +1,372 @@
+<testsuites id="" name="" tests="85" failures="0" skipped="85" errors="0" time="4.066326000000001">
+<testsuite name="auth.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="chromium" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Authentication Flow › should display login form by default" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should switch between login and register forms" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show validation errors for empty fields" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show error for invalid credentials" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should validate password confirmation in register form" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should have accessible form elements" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should support keyboard navigation" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="chromium" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should have proper page title" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should display main content sections" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="navigation.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="chromium" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Navigation and Layout › should display main navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should display footer" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should navigate to different subsites" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should be responsive on mobile" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should highlight active navigation item" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have proper page titles" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have accessible navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="firefox" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Authentication Flow › should display login form by default" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should switch between login and register forms" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show validation errors for empty fields" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show error for invalid credentials" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should validate password confirmation in register form" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should have accessible form elements" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should support keyboard navigation" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="firefox" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should have proper page title" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should display main content sections" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="navigation.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="firefox" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Navigation and Layout › should display main navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should display footer" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should navigate to different subsites" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should be responsive on mobile" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should highlight active navigation item" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have proper page titles" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have accessible navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="webkit" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Authentication Flow › should display login form by default" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should switch between login and register forms" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show validation errors for empty fields" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show error for invalid credentials" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should validate password confirmation in register form" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should have accessible form elements" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should support keyboard navigation" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="webkit" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should have proper page title" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should display main content sections" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="navigation.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="webkit" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Navigation and Layout › should display main navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should display footer" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should navigate to different subsites" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should be responsive on mobile" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should highlight active navigation item" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have proper page titles" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have accessible navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="Mobile Chrome" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Authentication Flow › should display login form by default" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should switch between login and register forms" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show validation errors for empty fields" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show error for invalid credentials" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should validate password confirmation in register form" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should have accessible form elements" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should support keyboard navigation" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="Mobile Chrome" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should have proper page title" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should display main content sections" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="navigation.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="Mobile Chrome" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Navigation and Layout › should display main navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should display footer" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should navigate to different subsites" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should be responsive on mobile" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should highlight active navigation item" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have proper page titles" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have accessible navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="auth.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="Mobile Safari" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Authentication Flow › should display login form by default" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should switch between login and register forms" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show validation errors for empty fields" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should show error for invalid credentials" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should validate password confirmation in register form" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should have accessible form elements" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Authentication Flow › should support keyboard navigation" classname="auth.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="Mobile Safari" tests="3" failures="0" skipped="3" time="0" errors="0">
+<testcase name="Homepage › should display main navigation" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should have proper page title" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Homepage › should display main content sections" classname="homepage.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="navigation.spec.ts" timestamp="2025-12-27T19:18:37.527Z" hostname="Mobile Safari" tests="7" failures="0" skipped="7" time="0" errors="0">
+<testcase name="Navigation and Layout › should display main navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should display footer" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should navigate to different subsites" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should be responsive on mobile" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should highlight active navigation item" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have proper page titles" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="Navigation and Layout › should have accessible navigation" classname="navigation.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>
