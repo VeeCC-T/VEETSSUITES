@@ -5,11 +5,13 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/$1',
   },
   testMatch: [
-    '**/__tests__/**/*.(test|spec).(js|jsx|ts|tsx)',
+    '**/__tests__/**/*.[jt]s?(x)',
+    '**/?(*.)+(spec|test).[jt]s?(x)',
   ],
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': ['babel-jest', { presets: ['next/babel'] }],
   },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   testTimeout: 5000,
   maxWorkers: 1,
 };
