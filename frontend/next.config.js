@@ -2,20 +2,31 @@
 const nextConfig = {
   reactStrictMode: true,
   
+  // Vercel optimizations
+  output: 'standalone',
+  
   // Performance optimizations
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ['@heroicons/react', 'lucide-react'],
   },
   
-  // Image optimization
+  // Image optimization for Vercel
   images: {
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
+    domains: ['veetssuites.vercel.app'],
   },
   
   // Compression
   compress: true,
+  
+  // Environment variables validation
+  env: {
+    NEXT_PUBLIC_DEMO_MODE: process.env.NEXT_PUBLIC_DEMO_MODE,
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
+  },
   
   // Bundle analyzer (only in development)
   ...(process.env.ANALYZE === 'true' && {
@@ -29,7 +40,7 @@ const nextConfig = {
     },
   }),
   
-  // Headers for caching
+  // Headers for security and caching
   async headers() {
     return [
       {
@@ -46,6 +57,10 @@ const nextConfig = {
           {
             key: 'X-XSS-Protection',
             value: '1; mode=block',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
           },
         ],
       },
@@ -66,6 +81,17 @@ const nextConfig = {
             value: 'public, max-age=31536000, immutable',
           },
         ],
+      },
+    ]
+  },
+  
+  // Redirects for better UX
+  async redirects() {
+    return [
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
       },
     ]
   },
