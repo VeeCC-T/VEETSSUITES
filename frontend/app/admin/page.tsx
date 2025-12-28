@@ -11,7 +11,7 @@ export default function AdminPage() {
       <SEO
         title="Admin Dashboard - VEETSSUITES"
         description="Admin dashboard for managing users, courses, and system health"
-        noIndex={true}
+        noindex={true}
       />
       <div className="min-h-screen bg-gray-50">
         <AdminDashboard />

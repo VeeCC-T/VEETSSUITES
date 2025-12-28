@@ -1,3 +1,5 @@
+import React from 'react'
+
 /**
  * Resource hints utilities for performance optimization
  */

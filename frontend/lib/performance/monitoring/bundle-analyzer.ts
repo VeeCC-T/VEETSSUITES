@@ -1,3 +1,5 @@
+import React from 'react'
+
 /**
  * Bundle analysis utilities for performance optimization
  */

@@ -1,10 +1,10 @@
-import PerformanceDemo from '@/components/performance/PerformanceDemo'
-import { Metadata } from 'next'
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Performance Optimization Demo - VeetsSuites',
-  description: 'Demonstration of performance optimization utilities including lazy loading, performance monitoring, and resource hints.',
-}
+import React from 'react'
+import PerformanceDemo from '@/components/performance/PerformanceDemo'
+
+// Disable static generation for this page
+export const dynamic = 'force-dynamic'
 
 export default function PerformancePage() {
   return <PerformanceDemo />
