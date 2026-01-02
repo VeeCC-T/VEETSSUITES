@@ -4,10 +4,11 @@
  */
 
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import * as fc from 'fast-check';
 import { DisclaimerBanner } from '@/components/healthee';
-import ConsultationInterface from '@/components/healthee/ConsultationInterface';
+import { ConsultationInterface } from '@/components/healthee/ConsultationInterface';
 import { Consultation, ConsultationMessage } from '@/lib/healthee/types';
 
 // Mock Next.js router

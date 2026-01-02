@@ -1,4 +1,4 @@
-import { fc } from 'fast-check';
+import fc from 'fast-check';
 
 // Basic data generators
 export const validEmail = () => fc.emailAddress();

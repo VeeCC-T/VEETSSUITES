@@ -13,7 +13,8 @@
  */
 
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import { axe, toHaveNoViolations } from 'jest-axe';
 import * as fc from 'fast-check';
 import { Button, Card } from '@/components/ui';

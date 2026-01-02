@@ -3,12 +3,13 @@
  * Validates Requirements 10.1, 10.2, 10.3, 10.4, 10.5, 11.1, 11.2, 11.3, 11.5, 12.5, 14.5
  */
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Navigation } from '../components/layout/Navigation';
 import { SEO } from '../components/seo/SEO';
-import { AuthProvider } from '../lib/auth/AuthContext';
+import { MockAuthProvider } from '../test-utils/mock-providers';
 
 // Mock Next.js router
 jest.mock('next/navigation', () => ({

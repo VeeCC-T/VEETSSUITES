@@ -4,7 +4,8 @@
  */
 
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/dom';
 import * as fc from 'fast-check';
 import { SessionCountdown, SessionJoinLink, CourseDetail } from '@/components/hub3660';
 import type { Session, Course } from '@/lib/hub3660';

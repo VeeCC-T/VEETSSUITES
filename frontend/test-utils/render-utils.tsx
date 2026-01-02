@@ -1,7 +1,10 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, createContext } from 'react'
 import { render, RenderOptions } from '@testing-library/react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { AuthProvider } from '@/lib/auth/AuthContext'
+
+// Create a mock auth context for testing
+const MockAuthContext = createContext<any>(null);
 
 // Create a custom render function that includes providers
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
@@ -60,11 +63,20 @@ export const renderWithAuth = (
       loading: false,
     }
 
+    // Create a mock AuthProvider that accepts a value prop
+    const MockAuthProvider = ({ children, value }: { children: React.ReactNode; value: any }) => {
+      return (
+        <MockAuthContext.Provider value={value}>
+          {children}
+        </MockAuthContext.Provider>
+      )
+    }
+
     return (
       <QueryClientProvider client={queryClient}>
-        <AuthProvider value={mockAuthValue}>
+        <MockAuthProvider value={mockAuthValue}>
           {children}
-        </AuthProvider>
+        </MockAuthProvider>
       </QueryClientProvider>
     )
   }

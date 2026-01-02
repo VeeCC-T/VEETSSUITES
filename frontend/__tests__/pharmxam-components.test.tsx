@@ -5,7 +5,8 @@
 
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import { ExamList, QuestionCard, ExamResults } from '@/components/pharmxam';
 import { ExamAttempt, Question } from '@/lib/pharmxam/api';
 

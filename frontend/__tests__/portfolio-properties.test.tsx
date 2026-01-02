@@ -11,7 +11,8 @@
 
 import '@testing-library/jest-dom';
 import React from 'react';
-import { render, screen, cleanup } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
+import { screen } from '@testing-library/dom';
 import { PortfolioDisplay } from '@/components/portfolio/PortfolioDisplay';
 import { PortfolioPublicView } from '@/components/portfolio/PortfolioPublicView';
 import { Portfolio } from '@/lib/portfolio/api';

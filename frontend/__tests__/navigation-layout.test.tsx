@@ -1,5 +1,6 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
+import { screen, fireEvent, waitFor } from '@testing-library/dom';
 import { Navigation } from '@/components/layout/Navigation';
 import { MainLayout } from '@/components/layout/MainLayout';
 import { Footer } from '@/components/layout/Footer';
