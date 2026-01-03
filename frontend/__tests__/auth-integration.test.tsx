@@ -362,7 +362,7 @@ describe('Authentication Integration Tests', () => {
 
       // Should redirect to login
       await waitFor(() => {
-        expect(mockPush).toHaveBeenCalledWith('/login');
+        expect(mockPush).toHaveBeenCalledWith('/auth-demo');
       });
     });
 
